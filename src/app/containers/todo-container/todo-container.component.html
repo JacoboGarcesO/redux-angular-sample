@@ -1,0 +1,6 @@
+<app-todos
+  [isLoading]="isLoading$ | async"
+  [todos]="todos$ | async"
+  (addTodo)="addTodo($event)"
+  (completeTodo)="completeTodo($event)"
+/>
